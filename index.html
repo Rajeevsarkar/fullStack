@@ -15,7 +15,7 @@
 
 <style>
   #head{
-    color: blue;
+    color: black;
     background-color: lightblue;
     padding: 120px;
     text-align: center;
@@ -46,7 +46,7 @@ function myFunction() {
   var d= document.getElementById("desc").value;
   var a= document.getElementById("age").value;
 
-  alert("form submitted");
+ // alert("form submitted");
    document.getElementById("nm").innerHTML="Your name: "+n;
    document.getElementById("ds").innerHTML="Description you filled in : "+d;
    document.getElementById("aa").innerHTML="age "+a;
@@ -54,7 +54,7 @@ function myFunction() {
        document.getElementById("aa").innerHTML="Your age is "+a+ " and you're eligible to vote";
    }
    else{
-    document.getElementById("aa").innerHTML="Your age is "+a+ " and you're not eligible to vote get lost bhikari !!!";
+    document.getElementById("aa").innerHTML="Your ------------------------age is "+a+ " and you're not eligible to vote get lost bhikari !!!";
    }
 }
 </script>
