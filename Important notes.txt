@@ -1,0 +1,6 @@
+To turn a folder into a new Git project: git init
+
+
+To connect the locally made repo with one we made on GitHub, we can use the remote add command:
+
+git remote add origin https://github.com/username/repo-name.git 

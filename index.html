@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="head">My Form</h1>
+<h3 id="head2">Fill the details</h3>
+<input type="text" id="name" placeholder="Enter Full Name"></input> <br>
+<input type="text" id= "desc" placeholder="Description"></input><br>
+<input type="number" id= "age" placeholder="Age"></input><br>
+
+<button id="myBtn">Try it</button>
+<p id="nm"></p>
+<p id="ds"></p>
+<p id="aa"></p>
+
+<style>
+  #head{
+    color: blue;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+  }
+  #head2{
+    color: yellowgreen;
+    background-color: darkgreen;
+    padding: 10px;
+    margin: 0px;
+  }
+  #name,#desc,#age{
+    margin-top: 20px;
+  }
+  #myBtn{
+    color: black;
+    background-color: yellow;
+    margin-top: 15px;
+    padding: 10px;
+  }
+</style>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  var n=document.getElementById("name").value;
+  var d= document.getElementById("desc").value;
+  var a= document.getElementById("age").value;
+
+  alert("form submitted");
+   document.getElementById("nm").innerHTML="Your name: "+n;
+   document.getElementById("ds").innerHTML="Description you filled in : "+d;
+   document.getElementById("aa").innerHTML="age "+a;
+   if(a>17){
+       document.getElementById("aa").innerHTML="Your age is "+a+ " and you're eligible to vote";
+   }
+   else{
+    document.getElementById("aa").innerHTML="Your age is "+a+ " and you're not eligible to vote get lost bhikari !!!";
+   }
+}
+</script>
+
+</body>
+</html>
